@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/theme.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <title>Midnight Club 3: DUB Edition Compatibility | xemu: Original Xbox Emulator</title>
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163809672-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-163809672-1');
+    </script>
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/" style="font-family: 'Ubuntu Mono'">xemu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExample04">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/#compatibility">Compatibility</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+<div class="container">
+  <div class="col-lg-10 mx-auto mt-5">
+    
+<!-- Game Identification -->
+<div class="py-2 pt-5">
+  <h2>Midnight Club 3: DUB Edition</h2>
+  <h6 class="card-subtitle mb-2 text-muted">
+    <strong>TT-121</strong>
+    <span class="align-text-top " style="font-family: monospace;">[54540079]</span>
+  </h6>
+</div>
+
+<div class="row">
+  <!-- Game Cover -->
+  <div class="col-md-4 text-center">
+    <figure class="figure">
+      <img src="https://raw.githubusercontent.com/mborgerson/xemu-website/master/titles/TT/121/cover_front.jpg" class="img-thumbnail img-fluid" width=350 />
+    </figure>
+  </div>
+
+  <!-- Compatibility Details -->
+  <div class="col-md-8">
+    <ul class="list-group mb-3">
+
+      <li class="list-group-item d-flex justify-content-between">
+        <div class="list-group w-100">
+          <div class="d-flex w-100 justify-content-between">
+            <h5>Status</h5>
+            <strong>Intro</strong>
+          </div>
+          <p class="text-muted mb-1">This title displays an intro sequence, but fails to make it to gameplay.</p>
+        </div>
+      </li>
+
+      
+      <li class="list-group-item d-flex justify-content-between">
+        <div class="list-group w-100">
+          <div class="d-flex w-100 justify-content-between">
+            <h5>Last Tested</h5>
+            <strong>Jun 20, 2020</strong>
+          </div>
+          <details>
+            <summary>
+            
+            
+            <strong>Reported by Discord user:</strong> acidhammer#9492
+            
+            </summary>
+            <pre>
+created_at: 1592688462
+xbe_cert_title_id: 1414791289
+xbe_headers_sha256: 472c5bb364860da9b158d842b87063b7d9746506e060d155b23efa18242971ce
+xemu_version: 0.2.0
+xemu_branch: 
+xemu_commit: 7f4b9d5480787df1b41e62447bedc4a76cfd198b
+xemu_date: Fri, Jun 19, 2020 12:50:56 PM
+os_platform: Windows
+os_version: Windows
+cpu: AMD Ryzen 7 3700X 8-Core Processor             
+gl_vendor: NVIDIA Corporation
+gl_renderer: GeForce RTX 2070 SUPER/PCIe/SSE2
+gl_version: 3.3.0 NVIDIA 442.50
+gl_shading_language_version: 3.30 NVIDIA via Cg compiler
+compat_rating: Intro
+compat_comments: Thanks to recent change &#34;nv2a: Replace some non-critical assertions with debug macros&#34; I am able to pass intros and enter the menus (but crash in menus), and this game&#39;s menus clearly involve running a lot of gameplay code (you can see the city map, traffic sim, trains, etc.)
+
+A while before this patch was made, I wanted to run the game without getting multiple assertion errors every frame, so I commented-out the assertion checks and rebuilt. Back then, I would get crashes at any point in the menus, and today that is still the case, so I guess it is exactly the assertion checks repeatedly warned me about, missing implementation.
+
+Also worth pointing out that the crashes so far for me have happened when the camera moves quickly around the city map, as part of transitioning between menus, so the crashes are at least related to the game doing whatever it does when it moves around the map like that.
+_id: 5eee7f4e1d20231011afeb49
+provided_by_discord_id: 146222511351267328
+provided_by_discord_name: acidhammer#9492
+</pre>
+          </details>
+        </div>
+      </li>
+      
+      
+    </ul>
+
+    
+
+    <!-- Known Issues -->
+    <div class="py-2">
+      <h4>Known Issues</h4>
+    </div>
+    <div class="list-group">
+      
+      <div class="list-group-item text-center text-muted text-small">
+        No issues have been reported for this title.
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p><strong>Disclaimer:</strong>
+      All product names, logos, and brands are property of their respective owners. All company, product and service names and/or images used in this website are for identification purposes only.
+      </p>
+      <p>&copy; 2020 xemu Project</p>
+      
+    </footer>
+  </div>
+</div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
